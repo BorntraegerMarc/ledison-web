@@ -18,6 +18,7 @@ System.config({
   map: {
     "angular": "github:angular/bower-angular@1.5.1",
     "angular-lazy": "github:matoilic/angular-lazy@0.2.2",
+    "angular-material": "github:angular/bower-material@1.0.6",
     "angular-mocks": "github:angular/bower-angular-mocks@1.5.1",
     "angular-translate": "github:angular-translate/bower-angular-translate@2.10.0",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.18",
@@ -36,8 +37,20 @@ System.config({
     "github:angular-ui/ui-router@0.2.18": {
       "angular": "github:angular/bower-angular@1.5.1"
     },
+    "github:angular/bower-angular-animate@1.5.1": {
+      "angular": "github:angular/bower-angular@1.5.1"
+    },
+    "github:angular/bower-angular-aria@1.5.1": {
+      "angular": "github:angular/bower-angular@1.5.1"
+    },
     "github:angular/bower-angular-mocks@1.5.1": {
       "angular": "github:angular/bower-angular@1.5.1"
+    },
+    "github:angular/bower-material@1.0.6": {
+      "angular": "github:angular/bower-angular@1.5.1",
+      "angular-animate": "github:angular/bower-angular-animate@1.5.1",
+      "angular-aria": "github:angular/bower-angular-aria@1.5.1",
+      "css": "github:systemjs/plugin-css@0.1.20"
     },
     "github:christopherthielen/ui-router-extras@0.0.14": {
       "angular": "github:angular/bower-angular@1.5.1"
