@@ -1,0 +1,15 @@
+{
+  "generator-angular-lazy": {
+    "appName": "ledison-web",
+    "i18n": true,
+    "bootstrapCss": false,
+    "bootstrapJs": false,
+    "indexRouteName": "index",
+    "locales": [
+      "en-us",
+      "de-ch"
+    ],
+    "defaultLocale": "en-us",
+    "root": null
+  }
+}
