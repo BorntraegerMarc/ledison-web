@@ -13,6 +13,7 @@ import errorHandlingConfig from './config/error-handling';
 import constants from './config/constants.json!';
 import ApplicationController from './application-controller';
 import applicationRoute from './application-route';
+import 'angular-material';
 
 const dependencies = [
     'ui.router',
@@ -21,7 +22,8 @@ const dependencies = [
     'ct.ui.router.extras.future',
     ngLazy.name,
     'pascalprecht.translate',
-    translationsModule.name
+    translationsModule.name,
+    'ngMaterial'
 ];
 
 const app = angular
