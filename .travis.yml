@@ -4,6 +4,10 @@ cache:
     $HOME/.npm
     $HOME/.cache
 
+env:
+  global:
+    secure: TzQQUk9fwaJ6lCQCaiUXmp8yYDVMvZYnIWC2Jd1uxphH/iUNr7eLCfqjxfMdVfOAcQ3a5WdKi58x4amss2fSA0wX1y7C3477Y4JBlyUpuZ9cdLxAwGlQpG257dHr8UVdjc9W8YvCZWR5rz8fVOOLu2OmjUDqiWA07oVpbTHkWMMcMkEQtxpBKM/mEH0ozMZMEFd6OMcor9d6ZEaL2WYqoFs5gWGGJ1hduQI/a7nGks6/lsLhilG2TjhwD/FphbYRVtycNQLGL/NPlMzVIFZqAG8ipWY6KXOdiyT8yGCwTTAtTRp9YkiTNF5aDD3vEfluTBFuOiHHyIosFp0ihU2P19PfGcPJqQP+p2l4jbiMCuFltgYf9nXLKFfdGaqaOzu2pUuAa9mKtbtTKENc3amNKit8mCPUpnKxfr5ZX5YXC/onyiQZYJrsJFHEaipsfnNghSOnmxluDyXxZDh2QcRmA+/t7GwqNO3dN4g3eHgV5h2SUuc1s5jTLbXy8LwmXh8GG00rwtD03d9CwxKIzn1VOuRL8HfbHyvH9x6uIW7UTlXQWnldRRI5YR53FlkRSdpOYWLcw4J18tU1VjhACJznBOkWRPFYjQVHGeBz1j2Favbaj7k5ZXrfgy7m/gcQmCbfUoNF+RaY7zy3p+jTd9Of3JlPTPyM5I51JLiQZjHJYl8=
+
 language: node_js
 node_js:
   - "4"
@@ -18,6 +22,7 @@ before_install:
   - npm i -g npm@3
   - npm i -g jspm
 #  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
+  - jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
 
 install:
   - node --version
@@ -35,3 +40,6 @@ script:
   - npm run eslint
   - npm run test
   - npm run test-e2e
+
+after_script:
+  - nano ~/.jspm/config
