@@ -66,6 +66,7 @@
     "build": "gulp build",
     "dist": "gulp dist",
     "eslint": "eslint .",
+    "test": "gulp test",
     "test-e2e": "gulp test-e2e"
   },
   "engines": {
