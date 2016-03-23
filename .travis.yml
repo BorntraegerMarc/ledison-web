@@ -1,7 +1,17 @@
 language: node_js
+
 node_js:
-  - "4.2"
+- '4.2'
+
+env:
+  global:
+    secure: qKx9nGIV+HCe5TEv4ltGxlIVPv1fggFwithQa08QoKAhmZcrNYehDPQHCe1CHSLcHslIA6RgJoe0YQtLxo5vJvMNQiY5yM2fHiO1+eBUmxvgb+BUasp66ES2JKDY0QTt/x2XWpaIa+mZyZMsoeMiD0gF0fPoJm6peOh6qQsCWALHjhsguIHbcUYSZ5QF0ZsmZw2edPObghnWPXQuvsDAPeOC65hkWrhsphHru40vpb6rOw75CiVsVMoC+Gr8OzZHd3EVGBBgqwx7VDhFCR5N+8LKtUp08QwLhvM5aMEFQbLZzax6OltXjaUZUtBV3FVABio2vNgJzDTTiRJ/uHRYFKeSFyx36jCIflrabtOzSDTMPWgDYe2cMJfpaq7nVKc5lnhCPHKBf4F45Ey2cL4Pr1vfEJhCWqi5yNBDqQNxDJWD2lr61vVN8gLOeM57zVAIzGGy46ihck0OoGTuxJwIhtXUj7ib3NhouNC7gZAOeFG+5MJczkeq9yuD3BqtxXtj21fW/FP9TX7ZPpEOxDALL8eEeddP47+5uTpnY0z5fitlNflLqy3iPdpyvZamUe9Y2oiORSamTFL5EJCE2cPQhNxhxtyKBV60JAGjvY0SdfZUDtgMaZCIVHg5SAD9kQVxiNB2ky5ssuXbX0G125Bewo2hYQMGhrG5H80PzgDyIsk=
+
 before_script:
-  - npm install -g jspm
+- npm install -g jspm
+
+before_install:
+- jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+
 install:
- - npm run setup
+- npm run setup
