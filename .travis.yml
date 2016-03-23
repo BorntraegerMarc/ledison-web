@@ -21,7 +21,7 @@ install:
   - node --version
   - npm --version
   - git --version
-  - npm install --no-optional
+  - npm install
 
 before_script:
   - "export DISPLAY=:99.0"
