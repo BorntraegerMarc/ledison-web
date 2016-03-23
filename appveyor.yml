@@ -15,12 +15,19 @@ platform:
 cache:
   - '%APPDATA%\npm-cache'
 
+environment:
+  JSPM_GITHUB_AUTH_TOKEN:Qm9ybnRyYWVnZXJNYXJjOmUyYjBiZGU2ZGQyYTMwOWE0ODQ0MDFmMGM5YTQ3YzZhYTE4YWY3Mjk=
+
 # Install scripts. (runs after repo cloning)
 install:
   - git rev-parse HEAD
   - ps: Install-Product node $env:nodejs_version
   - npm install -g npm@3
   - npm install -g jspm
+  - jspm config registries.github.auth %JSPM_GITHUB_AUTH_TOKEN%
+  - jspm config registries.github.maxRepoSize 0
+  - jspm registry export github #output to see what the registry looks like
+
 
 build_script:
   - npm run setup
