@@ -1,12 +1,26 @@
+sudo: false
+cache:
+  directories:
+    $HOME/.npm
+    $HOME/.cache
+
 language: node_js
 node_js:
-- '4.2'
-env:
-  global:
-  - secure: M8F/0tHhW9v2+12Gw7jWddylhHEn6S5k6gqjc30qLBGssFY6DkVWshKwMTfeokJnheX9l2htUoWtstm6cDwLa0aU5cPcmkqXqTFLDp1FJPl8aqB0Zpid/PXut4MXtskzyM32Ml86XgsBsWLAj7JQOca1V56bh0LdQUnC9Xu5ccybBfSS6OoqZ+DoHFkVPp+9oZqD9J6o7UrNcVpotUB7OixM11GShlj7PkD4vOmrLUWPpEq2YFqyr7Ty/TCYGWi4LSEcSg2HIONTHdkVfPI2bDcWLW5lHccXjm8IO7REt2M7qkqaQvamebp0q8JuyIzoBtdUNn3lg9vq9mspYOcslyC97WqcoMAcoai4uKHWbKURfbs/aMB+acnZRgx6rQsMWiEmLbJzhQPEiQ0ZqVDq9RS+2q+t0yur7yRTXVnCJuF8Y7PgEBxg7Wy/scwbDD4wCd7JR/KYxoxHxtAKYiRWVXQZ/Y+pLJV6c3uVUYM1AcUGZxFt02TMP/qkqwW5RT1RcPH+jkN2kbF0o7nXJEOBdp4QkyGYbVgOyK8JhM6ZKMMBPpSbemBIkJkn+mmwhBMEtSTSNAcZIbpync5cm4Ex5ZePqYmzhOmEfGYseYqrIg9ZcwS//JxleRydkjudEfJzpCCB6mdgDwu9zTcMwJ6qE5pymxjSlWKK1CJD8JlqxrQ=
-before_script:
-- npm install -g jspm
+  - "4"
+  - "5"
+  - node
+
+os:
+  - linux
+
 before_install:
-- jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+  - npm config set progress false
+  - npm i -g npm@3
+
 install:
-- npm run setup
+  - node --version
+  - npm --version
+  - git --version
+  - npm install --no-optional
+
+script: npm test
