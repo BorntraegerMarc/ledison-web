@@ -20,7 +20,7 @@ install:
   - git rev-parse HEAD
   - ps: Install-Product node $env:nodejs_version
   - npm install -g npm@3
-  - npm i -g jspm
+  - npm install -g jspm
 
 build_script:
   - npm run setup
@@ -33,7 +33,7 @@ test_script:
   - git --version
   - jspm --version
   - cmd: npm run eslint
-  - cmd: npm run test
+  - cmd: npm test
   - cmd: npm run test-e2e
 
 # Set build version format here instead of in the admin panel.
