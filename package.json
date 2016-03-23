@@ -65,7 +65,7 @@
     "setup": "npm install && jspm install",
     "build": "gulp build",
     "dist": "gulp dist",
-    "test": "eslint . && jasmine",
+    "eslint": "eslint .",
     "test-e2e": "gulp test-e2e"
   },
   "engines": {

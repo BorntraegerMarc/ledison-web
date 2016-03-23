@@ -23,4 +23,4 @@ install:
   - git --version
   - npm install --no-optional
 
-script: npm test
+script: npm run eslint
