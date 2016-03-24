@@ -44,5 +44,8 @@ module.exports.config = {
     maxSessions: 1,
     jasmineNodeOpts: {
         defaultTimeoutInterval: 360000
+    },
+    localSeleniumStandaloneOpts: {
+        args: ['-Djna.nosys=true']
     }
 };
