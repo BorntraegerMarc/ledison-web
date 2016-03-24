@@ -5,3 +5,6 @@
 [![devDependency Status](https://david-dm.org/BorntraegerMarc/ledison-web/dev-status.svg)](https://david-dm.org/BorntraegerMarc/ledison-web#info=devDependencies)
 
 LEDISON web project to manage the LED's over a simple web application.
+
+## Testing
+Tested with browserstack(https://www.browserstack.com)!
