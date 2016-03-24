@@ -42,4 +42,5 @@ install:
 script:
   - npm run eslint
   - npm run test
+  - npm run test
   - npm run test-e2e
