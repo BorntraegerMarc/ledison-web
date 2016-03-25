@@ -3,7 +3,7 @@
     <section layout="row" flex="">
         <md-sidenav class="md-sidenav-left" md-component-id="applicationNavigation"
                     md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
-            <md-toolbar class="md-theme-indigo">
+            <md-toolbar class="md-theme-indigo color">
                 <h1 class="md-toolbar-tools">Navigation</h1>
             </md-toolbar>
             <md-content layout-padding="">
@@ -13,8 +13,8 @@
             </md-content>
         </md-sidenav>
 
-        <md-content flex="" layout-padding="">
-            <md-toolbar>
+        <md-content flex="" layout-padding="" style="padding: 0">
+            <md-toolbar class="md-tall" style="padding: 0">
                 <div class="md-toolbar-tools">
                     <md-button class="md-icon-button" aria-label="Settings" hide-gt-md=""
                                ng-click="application.toggle()">
