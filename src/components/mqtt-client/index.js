@@ -1,4 +1,3 @@
-import './mqtt-client-component.css!';
 import angular from 'angular';
 import 'angular-translate';
 import translationsModule from './i18n/translations';
