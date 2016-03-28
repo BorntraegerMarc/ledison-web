@@ -11,7 +11,8 @@ System.config({
   paths: {
     "*": "build/*",
     "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "npm:*": "jspm_packages/npm/*",
+    "mqtt": "vendor/mqtt.js"
   },
   buildCSS: true,
 

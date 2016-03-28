@@ -5,11 +5,13 @@ import 'angular-translate';
 import translationsModule from './i18n/translations';
 import IndexStateController from './index-state-controller';
 import indexRouteConfig from './index-route';
+import mqttClientComponent from 'components/mqtt-client/index'
 
 const dependencies = [
     'ui.router',
     'pascalprecht.translate',
-    translationsModule.name
+    translationsModule.name,
+    mqttClientComponent.name
 ];
 
 export default angular
