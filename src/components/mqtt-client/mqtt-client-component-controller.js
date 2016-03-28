@@ -14,16 +14,13 @@ class MqttClientComponentController {
         });
     }
 
-    onConnectionLost(responseObject) {
-        console.log(responseObject);
+    onConnectionLost() {
     }
 
-    onMessageArrived(message) {
-        console.log('Received: ' + message.payloadString);
+    onMessageArrived() {
     }
 
     onConnect(context) {
-        console.log('connected!');
         context.invocationContext.client.subscribe(context.invocationContext.path);
     }
 }
