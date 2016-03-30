@@ -1,3 +1,9 @@
 {
-  "extends": "eslint-config-angular-lazy"
+  "extends": "eslint-config-angular-lazy",
+  "rules": {
+    "object-shorthand": [
+      0,
+      "never"
+    ]
+  }
 }
