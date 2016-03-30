@@ -1,6 +1,9 @@
 function deCh($translateProvider) {
     $translateProvider.translations('de-ch', {
-        'navigation-component.foo': 'bar'
+        navigationComponent: {
+            navigation: 'Navigation',
+            home: 'Home'
+        }
     });
 }
 

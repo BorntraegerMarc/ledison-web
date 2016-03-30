@@ -1,6 +1,9 @@
 function enUs($translateProvider) {
     $translateProvider.translations('en-us', {
-        'navigation-component.foo': 'bar'
+        navigationComponent: {
+            navigation: 'Navigation',
+            home: 'Home'
+        }
     });
 }
 

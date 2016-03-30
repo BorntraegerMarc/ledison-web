@@ -1,9 +1,9 @@
 import template from './navigation-component.html!text';
 
 export default {
-    bindings: { },
+    bindings: {},
     bindToController: true,
     controller: 'NavigationComponentController',
-    require: { },
+    require: {},
     template: template
 };

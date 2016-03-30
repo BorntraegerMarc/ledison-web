@@ -1,6 +1,6 @@
 function enUs($translateProvider) {
     $translateProvider.translations('en-us', {
-        foo: 'bar'
+        projectTitle: 'Project Ledison'
     });
 }
 
