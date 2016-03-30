@@ -1,5 +1,4 @@
 class ApplicationController {
-
     constructor($mdSidenav) {
         this.$mdSidenav = $mdSidenav;
     }

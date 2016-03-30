@@ -1,5 +1,4 @@
 class IndexStateController {
-
 }
 
 export default [
