@@ -8,9 +8,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     </head>
-    <body>
-        <div id="applicationContainer" ng-app="application-component" ng-strict-di="true">
-            <ui-view name="page"></ui-view>
+    <body layout="column">
+        <div id="applicationContainer" ng-app="application-component" ng-strict-di="true" layout="column" flex>
+            <ui-view name="page" layout="column" flex></ui-view>
         </div>
 
         <script src="jspm_packages/system.src.js"></script>

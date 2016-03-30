@@ -1,22 +1,19 @@
-<div layout="column" style="height:500px;">
+<section layout="row" flex>
+    <navigation layout="column"></navigation>
 
-    <section layout="row" flex="">
-        <navigation></navigation>
+    <md-content layout="column" flex layout-padding="" style="padding: 0">
+        <md-toolbar class="md-tall" style="padding: 0">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Settings" hide-gt-md=""
+                           ng-click="application.toggle()">
+                    <md-icon md-svg-icon="build/components/application/icons/ic_menu_white_24px.svg"></md-icon>
+                </md-button>
+                <h2>
+                    <span>{{'projectTitle' | translate}}</span>
+                </h2>
+            </div>
+        </md-toolbar>
 
-        <md-content flex="" layout-padding="" style="padding: 0">
-            <md-toolbar class="md-tall" style="padding: 0">
-                <div class="md-toolbar-tools">
-                    <md-button class="md-icon-button" aria-label="Settings" hide-gt-md=""
-                               ng-click="application.toggle()">
-                        <md-icon md-svg-icon="build/components/application/icons/ic_menu_white_24px.svg"></md-icon>
-                    </md-button>
-                    <h2>
-                        <span>{{'projectTitle' | translate}}</span>
-                    </h2>
-                </div>
-            </md-toolbar>
-
-            <ui-view name="application"></ui-view>
-        </md-content>
-    </section>
-</div>
+        <ui-view name="application"></ui-view>
+    </md-content>
+</section>
